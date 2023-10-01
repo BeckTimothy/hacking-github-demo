@@ -15,7 +15,7 @@
 
 "Content spoofing, also referred to as content injection, “arbitrary text injection” or virtual defacement, is an attack targeting a user made possible by an injection vulnerability in a web application. When an application does not properly handle user-supplied data, an attacker can supply content to a web application, typically via a parameter value, that is reflected back to the user. This presents the user with a modified page under the context of the trusted domain. This attack is typically used as, or in conjunction with, social engineering because the attack is exploiting a code-based vulnerability and a user’s trust. As a side note, this attack is widely misunderstood as a kind of bug that brings no impact." [via OWASP docs](https://owasp.org/www-community/attacks/Content_Spoofing)
 
-In short though, by impersonating another, one could deface a brand by making inflamatory comments, or they could use victim's credibility to take advantage of their followers or create clout. 
+In short though, by impersonating another, one could deface a brand by making inflammatory comments, or they could use victim's credibility to take advantage of their followers or create clout. 
 
 ![Fraudulent commits from famous people asking for bitcoin, using profanity, and talking about how Timothy Beck is the ebst developer in the world.](./img/commitFraud0.png)
 
@@ -27,7 +27,7 @@ In short though, by impersonating another, one could deface a brand by making in
 
 GitHub hosts remote Git repos for you. Through their settings you can add cryptographic keys to your account as authentication on the back-end this is really just using Git's authentication, but because you've uploaded your key to the server, every commit you make with that key active is tied to your GitHub account.
 
-When it comes to commits, GitHub sees the key associated with the account and commit when pushing and attaches that contribution to the account owning the key pair. But then it does something janky, GitHub displays the GitHub account tied to the user.email config variable given with each commit. As opposed to displaying the GitHub account tied to the key that pushed those commits to the remote repo. 
+When it comes to commits, GitHub sees the key associated with the account and commit when pushing and attaches that contribution to the account owning the key pair. But then it does something jank, GitHub displays the GitHub account tied to the user.email config variable given with each commit. As opposed to displaying the GitHub account tied to the key that pushed those commits to the remote repo. 
 
 
 ⠀

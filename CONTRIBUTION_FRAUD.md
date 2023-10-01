@@ -24,7 +24,7 @@ Sometimes You may be interested in advertising something about yourself and this
 
 # How to perform Contribution Fraud
 
-Git utilizes a few environment variables to overwrite the current date when tracking changes or commiting changes.
+Git utilizes a few environment variables to overwrite the current date when tracking changes or committing changes.
 By setting these environment variables in your CLI, all following commits made in that environment will be made with those specified dates. GitHub will honor the dates provided by Git in your contribution chart.
 ```bash
 export GIT_AUTHOR_DATE=$(date -d'2020-02-02 12:00:00')      
@@ -38,13 +38,13 @@ git commit --allow-empty --allow-empty-message -m 'test_message_for_02-02-2020'
 
 # Limitations
 
-When automating the creation of a vast amount of commits over a period of time you may run into a few limitions. A few to mention are:
+When automating the creation of a vast amount of commits over a period of time you may run into a few limitations. A few to mention are:
 
 1. Git will automatically squash commits into a single commit if you make more than 1000 (or maybe equal to 1000) commits before pushing. I resolved this issue by pushing every 990-999 commits made. 
 2. There's a minimum and maximum date GitHub will track. No contributions will show up if made after Dec 31st, 2099. The code will still exist in the repo, the green dot just won't show up on your chart. The earliest time is the beginning of unix time, imposed by Git as it doesn't recognize previous dates as a valid date format. 
 3. Only contributions from main/master or whatever you decided to name your root branch will show up on your GitHub contribution chart.
 4. While you can automate contribution activity, public repo code changes can be audited, and someone interested in looking at your public repo may be curious enough to see what exactly you're making changes to. Contributions to private repos however show up as "n contributions in private repositories."
-5. Bash scripting on windows is reaaally slow. My decade old ubuntu laptop made 36,000 commits in just a couple minutes, while my windows workstation with ridiculous hardware only made 160,000 commits running overnight. It may be a PEBKAC issue though. I use Git bash for my CLI needs, someone running WSL may have a different experience.
+5. Bash scripting on Windows is reaaally slow. My decade old ubuntu laptop made 36,000 commits in just a couple of minutes, while my Windows workstation with ridiculous hardware only made 160,000 commits running overnight. It may be a PEBKAC issue though. I use Git bash for my CLI needs, someone running WSL may have a different experience.
 
 # How to undo Contribution Fraud
 
@@ -52,7 +52,7 @@ Hahaha, you just run that one Git command:
 ```bash
 git gud
 ```
-Joking aside, you have to delete the repo the repo. You can try using the below series of git commands to squash all your commits and replace master, but there's no guaruntee your contribution chart will reflect that for every commit; you may solve this by pushing your codebase to a new repo after squashing then deleting the old repo. Either way you're losing the entire commit history of that repo, but this way you'll keep the code changes. So plan ahead and don't go nuking the commit history of an important repo. :)
+Joking aside, you have to delete the repo. You can try using the below series of git commands to squash all your commits and replace master, but there's no guarantee your contribution chart will reflect that for every commit; you may solve this by pushing your codebase to a new repo after squashing then deleting the old repo. Either way you're losing the entire commit history of that repo, but this way you'll keep the code changes. So plan ahead and don't go nuking the commit history of an important repo. :)
 
 ```bash
 git checkout --orphan temp # create a copy of current branch without its commit history
