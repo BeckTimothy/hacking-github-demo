@@ -52,7 +52,7 @@ Hahaha, you just run that one Git command:
 ```bash
 git gud
 ```
-Joking aside, you either delete the repo, or merge master into a temp branch while squashing all commits. Then replace master with the temp branch, then delete the temp branch. Now Master has a single commit. Either way you're losing the entire commit history of that repo, but this way you'll keep the code changes. So plan ahead and don't go nuking the commit history of an important repo. :)
+Joking aside, you have to delete the repo the repo. You can try using the below series of git commands to squash all your commits and replace master, but there's no guaruntee your contribution chart will reflect that for every commit; you may solve this by pushing your codebase to a new repo after squashing then deleting the old repo. Either way you're losing the entire commit history of that repo, but this way you'll keep the code changes. So plan ahead and don't go nuking the commit history of an important repo. :)
 
 ```bash
 git checkout --orphan temp # create a copy of current branch without its commit history
