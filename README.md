@@ -1,7 +1,11 @@
 
 # Purpose
 
-I've built this repo to support some presentations shared with **Albuquerque Lowtech's Anonymous** (a hacker collective located in Albuquerque, New Mexico,) **Albuquerque Software Social Club** (a meetup group for Albuquerque developers,) and for the **Albuquerque chapter of Google Developer Groups**.
+I've built this repo to support some presentations shared with: 
+- **Albuquerque Lowtech's Anonymous** (a hacker collective located in Albuquerque, New Mexico)
+- **Albuquerque Software Social Club** (a meetup group for Albuquerque developers,)
+- The **Albuquerque chapter of Google Developer Groups**.
+
 The purpose of this information is to bring awareness to Git, Git variables, some ethical grey areas in the use of git variables. The information here is for educational use only. I am in no way encouraging finding shady ways to use your knowledge. Do what you will at your own risk.
 
 # Git vs GitHub
