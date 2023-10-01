@@ -1,10 +1,10 @@
 
 # Contents
 
-1. [Define Content Spoofing](https://github.com/BeckTimothy/dontTrustContributionCharts/blob/master/CONTENT_SPOOFING.md#content-spoofing)
-2. [How Git and GitHub handle authentication](https://github.com/BeckTimothy/dontTrustContributionCharts/blob/master/CONTENT_SPOOFING.md#how-git-and-github-handle-authentication)
-3. [Why GitHub considers it a feature and not an exploit](https://github.com/BeckTimothy/dontTrustContributionCharts/blob/master/CONTENT_SPOOFING.md#githubs-stance-on-content-spoofing)
-4. [How to impersonate someone](https://github.com/BeckTimothy/dontTrustContributionCharts/blob/master/CONTENT_SPOOFING.md#how-one-would-impersonate-someone---for-science-of-course)
+1. [Define Content Spoofing](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTENT_SPOOFING.md#content-spoofing)
+2. [How Git and GitHub handle authentication](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTENT_SPOOFING.md#how-git-and-github-handle-authentication)
+3. [Why GitHub considers it a feature and not an exploit](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTENT_SPOOFING.md#githubs-stance-on-content-spoofing)
+4. [How to impersonate someone](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTENT_SPOOFING.md#how-one-would-impersonate-someone---for-science-of-course)
 
 
 ⠀

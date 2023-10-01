@@ -1,11 +1,11 @@
 
 # Contents
 
-1. [What is *Contribution Fraud*](https://github.com/BeckTimothy/dontTrustContributionCharts/blob/master/CONTRIBUTION_FRAUD.md#what-is-contribution-fraud)
-2. [How can it be used](https://github.com/BeckTimothy/dontTrustContributionCharts/blob/master/CONTRIBUTION_FRAUD.md#why-would-someone-do-contribution-fraud)
-3. [How to perform contribution fraud](https://github.com/BeckTimothy/dontTrustContributionCharts/blob/master/CONTRIBUTION_FRAUD.md#how-to-perform-contribution-fraud)
-4. [Limitations](https://github.com/BeckTimothy/dontTrustContributionCharts/blob/master/CONTRIBUTION_FRAUD.md#limitations)
-5. [How to undo contribution fraud](https://github.com/BeckTimothy/dontTrustContributionCharts/blob/master/CONTRIBUTION_FRAUD.md#how-to-undo-contribution-fraud)
+1. [What is *Contribution Fraud*](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md#what-is-contribution-fraud)
+2. [How can it be used](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md#why-would-someone-do-contribution-fraud)
+3. [How to perform contribution fraud](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md#how-to-perform-contribution-fraud)
+4. [Limitations](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md#limitations)
+5. [How to undo contribution fraud](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md#how-to-undo-contribution-fraud)
 
 # What is *Contribution Fraud*
 
