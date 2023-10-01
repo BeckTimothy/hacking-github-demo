@@ -18,7 +18,7 @@ When I talk about Git environment variables I'm talking about two different thin
 
 For the purpose of this Repo we are exploring the behaviors of a specific few environment/config variables:
 
-1. Environment variables GIT_AUTHOR_DATE and GIT_COMMITTER_DATE and explore a hack to contribution time travel within [CONTRIBUTION_FRAUD.md](https://github.com/BeckTimothy/dontTrustContributionCharts/blob/master/CONTRIBUTION_FRAUD.md) 
-2. Config Variables user.email and user.name and a content spoofing hack within [CONTENT_SPOOFING.md](https://github.com/BeckTimothy/dontTrustContributionCharts/blob/master/CONTENT_SPOOFING.md)
+1. Environment variables GIT_AUTHOR_DATE and GIT_COMMITTER_DATE and explore a hack to contribution time travel within [CONTRIBUTION_FRAUD.md](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md) 
+2. Config Variables user.email and user.name and a content spoofing hack within [CONTENT_SPOOFING.md](https://github.com/BeckTimothy/.../CONTENT_SPOOFING.md)
    
      
