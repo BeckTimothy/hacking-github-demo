@@ -8,6 +8,23 @@ I've built this repo to support some presentations shared with:
 
 The purpose of this information is to bring awareness to Git, Git variables, some ethical grey areas in the use of git variables. The information here is for educational use only. I am in no way encouraging finding shady ways to use your knowledge. Do what you will at your own risk.
 
+# Contents
+
+1. [Git vs GitHub](https://github.com/BeckTimothy/hacking-github-demo#git-vs-github)
+2. [Git Environment Variables](https://github.com/BeckTimothy/hacking-github-demo#git-environment-variables)
+
+3. [What is *Content Spoofing*](https://github.com/BeckTimothy/hacking-github-demo#content-spoofing)
+4. [How Git and GitHub handle authentication](https://github.com/BeckTimothy/hacking-github-demo#how-git-and-github-handle-authentication)
+5. [Why GitHub considers it a feature and not an exploit](https://github.com/BeckTimothy/hacking-github-demo#githubs-stance-on-content-spoofing)
+6. [How to impersonate someone](https://github.com/BeckTimothy/hacking-github-demo#how-one-would-impersonate-someone---for-science-of-course)
+
+7. [What is *Contribution Fraud*](https://github.com/BeckTimothy/hacking-github-demo#what-is-contribution-fraud)
+8. [How can it be used](https://github.com/BeckTimothy/hacking-github-demo#why-would-someone-do-contribution-fraud)
+9. [How to perform contribution fraud](https://github.com/BeckTimothy/hacking-github-demo#how-to-perform-contribution-fraud)
+10. [Limitations](https://github.com/BeckTimothy/hacking-github-demo#limitations)
+11. [How to undo contribution fraud](https://github.com/BeckTimothy/hacking-github-demo#how-to-undo-contribution-fraud)
+
+
 # Git vs GitHub
 
 Similarly to how JavaScript is a programming language and Java is the first layer of hell; Git and GitHub are two completely different things.
@@ -24,25 +41,6 @@ For the purpose of this Repo we are exploring the behaviors of a specific few en
 
 1. Environment variables GIT_AUTHOR_DATE and GIT_COMMITTER_DATE and explore a hack to contribution time travel within [CONTRIBUTION_FRAUD.md](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md) 
 2. Config Variables user.email and user.name and a content spoofing hack within [CONTENT_SPOOFING.md](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTENT_SPOOFING.md)
-
-
-
-# Contents
-
-1. [Git vs GitHub]()
-2. [Git Environment Variables]()
-
-3. [What is *Content Spoofing*](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTENT_SPOOFING.md#content-spoofing)
-4. [How Git and GitHub handle authentication](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTENT_SPOOFING.md#how-git-and-github-handle-authentication)
-5. [Why GitHub considers it a feature and not an exploit](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTENT_SPOOFING.md#githubs-stance-on-content-spoofing)
-6. [How to impersonate someone](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTENT_SPOOFING.md#how-one-would-impersonate-someone---for-science-of-course)
-
-7. [What is *Contribution Fraud*](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md#what-is-contribution-fraud)
-8. [How can it be used](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md#why-would-someone-do-contribution-fraud)
-9. [How to perform contribution fraud](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md#how-to-perform-contribution-fraud)
-10. [Limitations](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md#limitations)
-11. [How to undo contribution fraud](https://github.com/BeckTimothy/hacking-github-demo/blob/master/CONTRIBUTION_FRAUD.md#how-to-undo-contribution-fraud)
-
 
 
 # Content Spoofing
