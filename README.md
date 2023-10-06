@@ -12,17 +12,8 @@ The purpose of this information is to bring awareness to Git, Git variables, som
 
 1. [Git vs GitHub](https://github.com/BeckTimothy/hacking-github-demo#git-vs-github)
 2. [Git Environment Variables](https://github.com/BeckTimothy/hacking-github-demo#git-environment-variables)
-
-3. [What is *Content Spoofing*](https://github.com/BeckTimothy/hacking-github-demo#content-spoofing)
-4. [How Git and GitHub handle authentication](https://github.com/BeckTimothy/hacking-github-demo#how-git-and-github-handle-authentication)
-5. [Why GitHub considers it a feature and not an exploit](https://github.com/BeckTimothy/hacking-github-demo#githubs-stance-on-content-spoofing)
-6. [How to impersonate someone](https://github.com/BeckTimothy/hacking-github-demo#how-one-would-impersonate-someone---for-science-of-course)
-
-7. [What is *Contribution Fraud*](https://github.com/BeckTimothy/hacking-github-demo#what-is-contribution-fraud)
-8. [How can it be used](https://github.com/BeckTimothy/hacking-github-demo#why-would-someone-do-contribution-fraud)
-9. [How to perform contribution fraud](https://github.com/BeckTimothy/hacking-github-demo#how-to-perform-contribution-fraud)
-10. [Limitations](https://github.com/BeckTimothy/hacking-github-demo#limitations)
-11. [How to undo contribution fraud](https://github.com/BeckTimothy/hacking-github-demo#how-to-undo-contribution-fraud)
+3. [What is *Content Spoofing* and how to impersonate GitHub users](https://github.com/BeckTimothy/hacking-github-demo#content-spoofing)
+7. [What is *Contribution Fraud* and how to fake your GitHub chart](https://github.com/BeckTimothy/hacking-github-demo#what-is-contribution-fraud)
 
 
 # Git vs GitHub
@@ -55,7 +46,7 @@ In short though, by impersonating another, one could deface a brand by making in
 ⠀
 
 
-# How Git and GitHub handle Authentication
+### How Git and GitHub handle Authentication
 
 GitHub is a bunch of tools built on top of Git. Git authenticates you using ssh keys (usually) when you push/pull commits to/from the remoite repo. So the software authenticates you when you access the remote repository, not when you make a commit.
 
@@ -72,7 +63,7 @@ Co-authored-by: ANOTHER-NAME <ANOTHER-NAME@EXAMPLE.COM>"
 see: [Github docs for creating commits with multiple authors](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors)
 
 
-# GitHubs stance on Content Spoofing
+### GitHubs stance on Content Spoofing
 
 GitHub officially claims that content spoofing by "impersonating a user through Git email address" as either "feature is working as intended or we accept the low risk as a security/usability tradeoff" [via GitHub bug bounty program](https://bounty.github.com/ineligible.html)
 
@@ -84,7 +75,7 @@ GitHub doesn't see content spoofing as a problem, most likely, because they've i
 ⠀
 
 
-# How one would impersonate someone - for science of course
+### How one would impersonate someone - for science of course
 
 In short all you do is update the Git config variable `user.email` and GitHub will attribute later commits to the account associated with the email given to them in said commits.
 
@@ -117,7 +108,7 @@ Have fun and maybe don't go making inflammatory commit messages. Please.
 
 *Gasp!* they used the word fraud. It must be illegal, immoral, or scary... Fact is I decided to call it fraud because that's what it is. Through this hack we're fraudulently specifying information about our commits, we aren't breaking any laws, we aren't breaking any TOU/EULA, your morals and internet ethics are irrelevant here. I decided to call this contribution fraud, but specifically we're talking about fraudulently defining the time of which commits say they are made through the use of Git configuration variables.
 
-# Why would someone do Contribution Fraud
+### Why would someone do Contribution Fraud
 
 There are a few reasons why someone would want to fake their contributions, but it all boils down to this chart:
 ![GitHub contribution banner](./img/contributionChart0.png)
@@ -128,7 +119,7 @@ Sometimes You may be interested in advertising something about yourself and this
 ![Hello World GitHub contribution banner](./img/contributionChart1.png)
 
 
-# How to perform Contribution Fraud
+### How to perform Contribution Fraud
 
 Git utilizes a few environment variables to overwrite the current date when tracking changes or committing changes.
 By setting these environment variables in your CLI, all following commits made in that environment will be made with those specified dates. GitHub will honor the dates provided by Git in your contribution chart.
@@ -142,7 +133,7 @@ Additionally, you may be interested in making empty commits where you commit no 
 git commit --allow-empty --allow-empty-message -m 'test_message_for_02-02-2020' 
 ```
 
-# Limitations
+### Limitations
 
 When automating the creation of a vast amount of commits over a period of time you may run into a few limitations. A few to mention are:
 
@@ -152,7 +143,7 @@ When automating the creation of a vast amount of commits over a period of time y
 4. While you can automate contribution activity, public repo code changes can be audited, and someone interested in looking at your public repo may be curious enough to see what exactly you're making changes to. Contributions to private repos however show up as "n contributions in private repositories."
 5. Bash scripting on Windows is reaaally slow. My decade old ubuntu laptop made 36,000 commits in just a couple of minutes, while my Windows workstation with ridiculous hardware only made 160,000 commits running overnight. It may be a PEBKAC issue though. I use Git bash for my CLI needs, someone running WSL may have a different experience.
 
-# How to undo Contribution Fraud
+### How to undo Contribution Fraud
 
 Hahaha, you just run that one Git command:
 ```bash
