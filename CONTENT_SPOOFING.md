@@ -25,13 +25,19 @@ In short though, by impersonating another, one could deface a brand by making in
 
 # How Git and GitHub handle Authentication
 
-GitHub hosts remote Git repos for you. Through their settings you can add cryptographic keys to your account as authentication on the back-end this is really just using Git's authentication, but because you've uploaded your key to the server, every commit you make with that key active is tied to your GitHub account.
+GitHub is a bunch of tools built on top of Git. Git authenticates you using ssh keys (usually) when you push/pull commits to/from the remoite repo. So the software authenticates you when you access the remote repository, not when you make a commit. 
 
-When it comes to commits, GitHub sees the key associated with the account and commit when pushing and attaches that contribution to the account owning the key pair. But then it does something jank, GitHub displays the GitHub account tied to the user.email config variable given with each commit. As opposed to displaying the GitHub account tied to the key that pushed those commits to the remote repo. 
+When it comes to the commit, Git and Github displays the user(s) associated with commits by email regardless of authentication. It displays the user tied to the user.email config for the git client making the commit. In the case of multiple committers; the users tied to the emails associated in `Co-authored-by: NAME <NAME@EXAMPLE.COM>` lines in the commit message trailer.  
 
-
+```bash
+ git commit -m "Making example commit.
+>
+>
+Co-authored-by: NAME <NAME@EXAMPLE.COM>
+Co-authored-by: ANOTHER-NAME <ANOTHER-NAME@EXAMPLE.COM>"
+```
 ⠀
-⠀
+see: [Github docs for creating commits with multiple authors](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors)
 
 
 # GitHubs stance on Content Spoofing
@@ -40,6 +46,7 @@ GitHub officially claims that content spoofing by "impersonating a user through 
 
 ![GitHub bug bounty scope exerpt](./img/githubScope0.png)
 
+GitHub doesn't see content spoofing as a problem, most likely, because they've implemented this 'verified' status, by signing commits with [GPG key pairs](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits), which few people use. Far too few people use GPG keys, and far too few projects require you to use this, and it's not enabled by default so when a commit isn't signed it's content is not seen as less credible by the majority.
 
 ⠀
 ⠀
